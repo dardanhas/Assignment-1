@@ -1,33 +1,48 @@
+<!-- HTML innehåller sidans struktur (media, text, knappar o.s.v).
+ Detta är vad som laddas först. -->
+
 <!doctype html>
 <html class="no-js" lang="">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Assignment 1</title>
+
+  <!-- Nedan kopplas CSS filen till HTML.
+  CSS är design som tex färger, typsnitt och layout för HTML elementen.
+  Den ligger högt upp i koden, alltså i head, då den behöver laddas tidigt eftersom den påverkas hur sidan ser ut.
+  CSS laddas alltså efter strukturen (HTML) har laddat. -->
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
+  <meta name="description" content="A basic web page">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js"></script>
+<header>
 
+  <h1>Detta är huvudrubriken i header</h1>
+
+</header>
+
+<main>
+<p id="maintext">Detta är huvudtexten.</p>
+  <button id="knapp">Klicka här!</button>
+</main>
+
+  <footer>
+
+<p>2025 Dardan</p>
+
+</footer>
+
+<!-- JS filen gör sidan interaktiv och nedan kod är kopplingen till HTML.
+Den ligger längst ner då den ska köras sist. Anledningen till detta är att allt innehåll ska ladda innan JavaScript kan påverka innehållet.
+I detta fall har jag en klickbar knapp som ändrar innehållet. -->
+<script src="js/app.js"></script>
 </body>
 
 </html>
